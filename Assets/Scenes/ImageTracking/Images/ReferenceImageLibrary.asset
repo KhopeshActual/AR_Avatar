@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5438900029218683827
+  m_GuidHigh: 11338665651040755373
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5332104792803380197
+      m_GuidHigh: 185310804734996668
+    m_SerializedTextureGuid:
+      m_GuidLow: 10134415364404984658
+      m_GuidHigh: 13795097954526581147
+    m_Size: {x: 0.20856424, y: 0.3}
+    m_SpecifySize: 1
+    m_Name: Anubis
+    m_Texture: {fileID: 2800000, guid: 599ebb52ad148ca49b514605800872bf, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5137653098457529585
+      m_GuidHigh: 961263939727273619
+    m_SerializedTextureGuid:
+      m_GuidLow: 4076908823667807444
+      m_GuidHigh: 438229571507384571
+    m_Size: {x: 0.3, y: 0.15}
+    m_SpecifySize: 1
+    m_Name: VRChat
+    m_Texture: {fileID: 2800000, guid: 886014d416f93894fbf0c43379e71406, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4657613048449512921
+      m_GuidHigh: 5645037707227197865
+    m_SerializedTextureGuid:
+      m_GuidLow: 843369321807712780
+      m_GuidHigh: 14768776237620384680
+    m_Size: {x: 0.3, y: 0.15}
+    m_SpecifySize: 1
+    m_Name: Vrchat INV
+    m_Texture: {fileID: 2800000, guid: 08cf920c3fee0bb4a8d39762bd3bf5cc, type: 3}
