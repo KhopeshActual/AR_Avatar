@@ -14,26 +14,29 @@ public class Getcharacters : MonoBehaviour
 
 
     public int[] AvatarList;
-    public int AvatarID;
+    public int AvatarID =0;
 
-    public TMP_Dropdown Animations;
-    public TMP_Dropdown Avatars;
+    public TMP_Dropdown AnimationsDropdown;
+    public TMP_Dropdown AvatarsDropdown;
 
     public void Start()
     {
-        SetAnimDropdown(1);
-        
+        SetDropdowns();
+        AvatarSelector();
     }
     public void Audiotoggle()
     {
         FindObjectOfType<change_active_character>().Toggleaudio();
     }
-
-    public void AvatarPicker(int i)
+    public void AvatarSelector()
     {
-        AvatarID = FindObjectOfType<change_active_character>().AvatarChanger();
-
        
+        AvatarID = FindObjectOfType<change_active_character>().AvatarChanger(AvatarsDropdown.value);
+        SetAnimDropdown(AvatarID);
+        return;
+    }
+    public void SetDropdowns()
+    {
         SetAnimDropdown(AvatarID);
         SetAvatarDropdown(AvatarID);
     }
@@ -41,62 +44,62 @@ public class Getcharacters : MonoBehaviour
 
     public void AnimationPicker(int i)
     {
-        FindObjectOfType<change_active_character>().playAnimation(Animations.options[i].text);
+        FindObjectOfType<change_active_character>().playAnimation(AnimationsDropdown.options[i].text);
 
     }
 
-    private void SetAnimDropdown(int ID)
+    private void SetAnimDropdown(int AvatarID)
     {
-        Animations.options.Clear();
+        AnimationsDropdown.options.Clear();
        
 
-        if (AvatarID == 1)
+        if (AvatarID == 0)
         {
-            ID= 1;
+            AvatarID= 0;
             foreach (string Anim in SpartanAnimations)
             {
-                Animations.options.Add(new TMP_Dropdown.OptionData(Anim));
+                AnimationsDropdown.options.Add(new TMP_Dropdown.OptionData(Anim));
 
             }
         }
-        else if (AvatarID == 2)
+        else if (AvatarID == 1)
         {
-            ID= 2;
+            AvatarID =1;
             foreach (string Anim in GuardianAnimations)
             {
-                Animations.options.Add(new TMP_Dropdown.OptionData(Anim));
+                AnimationsDropdown.options.Add(new TMP_Dropdown.OptionData(Anim));
 
             }
         }
-        else if (AvatarID >2 && AvatarID <= 5)
+        else if (AvatarID >1 && AvatarID <= 4)
         {
-            ID= AvatarID;
+            AvatarID = 2;
             foreach (string Anim in ArtyomNDAnimations)
             {
-                Animations.options.Add(new TMP_Dropdown.OptionData(Anim));
+                AnimationsDropdown.options.Add(new TMP_Dropdown.OptionData(Anim));
 
             }
         }
-        else if (AvatarID == 6)
+        else if (AvatarID == 5)
         {
-            ID = 6;
+            AvatarID = 5;
             foreach (string Anim in ArtyomMorozovAnimations)
             {
-                Animations.options.Add(new TMP_Dropdown.OptionData(Anim));
+                AnimationsDropdown.options.Add(new TMP_Dropdown.OptionData(Anim));
 
             }
         }
     }
     private void SetAvatarDropdown(int AvatarID)
     {
-        Avatars.options.Clear();
+        AvatarsDropdown.options.Clear();
 
 
         if (AvatarID == 0)
         {
             foreach (int ID  in AvatarList)
             {
-                Avatars.options.Add(new TMP_Dropdown.OptionData("Avatar " + ID));
+                AvatarsDropdown.options.Add(new TMP_Dropdown.OptionData("Avatar " + ID));
 
             }
         }
