@@ -1347,6 +1347,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6649305950664285945, guid: 33b53f2de034b0c4fa28fec363c7a95b,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6649305950664285946, guid: 33b53f2de034b0c4fa28fec363c7a95b,
         type: 3}
       propertyPath: m_Name
@@ -1355,7 +1360,7 @@ PrefabInstance:
     - target: {fileID: 6649305950664285946, guid: 33b53f2de034b0c4fa28fec363c7a95b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33b53f2de034b0c4fa28fec363c7a95b, type: 3}
@@ -1549,6 +1554,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 386cdc9fab3e6864ab604b39a42be464, type: 2}
+    - target: {fileID: 4312126559997901833, guid: 7f3543b7fe093c54391cb9ebd935b829,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4358645555653134107, guid: 7f3543b7fe093c54391cb9ebd935b829,
         type: 3}
       propertyPath: m_RotationOffset.x
@@ -1572,7 +1582,7 @@ PrefabInstance:
     - target: {fileID: 5258762893177896830, guid: 7f3543b7fe093c54391cb9ebd935b829,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6256540151784867920, guid: 7f3543b7fe093c54391cb9ebd935b829,
         type: 3}
@@ -1993,7 +2003,7 @@ PrefabInstance:
     - target: {fileID: 4597620205652236670, guid: 36b17bfdcfa3396479870243a99b2f39,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6433326421539331418, guid: 36b17bfdcfa3396479870243a99b2f39,
         type: 3}
@@ -2020,6 +2030,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: eaea97a64e72a0642800548d264ad617, type: 2}
+    - target: {fileID: 7090349508806236606, guid: 36b17bfdcfa3396479870243a99b2f39,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4651244480317284778, guid: 36b17bfdcfa3396479870243a99b2f39, type: 3}
     - {fileID: 1443593587180094896, guid: 36b17bfdcfa3396479870243a99b2f39, type: 3}
@@ -2462,7 +2477,7 @@ PrefabInstance:
     - target: {fileID: 5768219103081992514, guid: 0f1c55f2e16dd5a4891ced41329897d8,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5771858789226020208, guid: 0f1c55f2e16dd5a4891ced41329897d8,
         type: 3}
@@ -2514,10 +2529,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5862588189380531254, guid: 0f1c55f2e16dd5a4891ced41329897d8,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131234745923069353, guid: 0f1c55f2e16dd5a4891ced41329897d8,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7179747459876475311, guid: 0f1c55f2e16dd5a4891ced41329897d8,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7184735899290068867, guid: 0f1c55f2e16dd5a4891ced41329897d8,
         type: 3}
@@ -3312,17 +3337,21 @@ MonoBehaviour:
   - 
   - 
   ArtyomNDAnimations:
-  - Eye Change toggle
-  - Gas Mask Toggle
-  - Body Electricity Toggle
-  - Electric hands Toggle
-  - Suit Armour Toggle
-  - Helmet Toggle
-  - Lightning Left Toggle
-  - Lightning Right Toggle
-  - Splicing Toggle
-  - Spotlight Toggle
-  - Reset anims
+  - Body Electircity Trigger
+  - Gas Mask
+  - Helmet
+  - Electric Hands
+  - Suit Armour
+  - Aviators
+  - Phone
+  - Spotlight
+  - Green Electric Hands
+  - Smug face
+  - angry face
+  - Full Charge
+  - Empty Charge
+  - EyesGold
+  - EyesGreen
   ArtyomMorozovAnimations:
   - Helmet Belt
   - Helmet Head
@@ -4970,6 +4999,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 386cdc9fab3e6864ab604b39a42be464, type: 2}
+    - target: {fileID: 1912963982555977775, guid: 94e7937841b790945b344bac6053d97d,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2582229840479717621, guid: 94e7937841b790945b344bac6053d97d,
         type: 3}
       propertyPath: m_RotationOffset.x
@@ -5023,7 +5057,7 @@ PrefabInstance:
     - target: {fileID: 5231135555502597851, guid: 94e7937841b790945b344bac6053d97d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5391627283618449434, guid: 94e7937841b790945b344bac6053d97d,
         type: 3}
@@ -5398,6 +5432,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 386cdc9fab3e6864ab604b39a42be464, type: 2}
+    - target: {fileID: 1197757321538985765, guid: 503aeecd5139711498ce8c3b7ba46472,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2659780991912158559, guid: 503aeecd5139711498ce8c3b7ba46472,
         type: 3}
       propertyPath: m_RotationOffset.x
@@ -5521,7 +5560,7 @@ PrefabInstance:
     - target: {fileID: 4802834753805042340, guid: 503aeecd5139711498ce8c3b7ba46472,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4965897310141693119, guid: 503aeecd5139711498ce8c3b7ba46472,
         type: 3}
