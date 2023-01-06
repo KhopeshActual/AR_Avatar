@@ -33,7 +33,7 @@ public class Getcharacters : MonoBehaviour
        
         AvatarID = FindObjectOfType<change_active_character>().AvatarChanger(AvatarsDropdown.value);
         SetAnimDropdown(AvatarID);
-        return;
+        
     }
     public void SetDropdowns()
     {
@@ -42,10 +42,9 @@ public class Getcharacters : MonoBehaviour
     }
 
 
-    public void AnimationPicker(int i)
+    public void AnimationSelector()
     {
-        FindObjectOfType<change_active_character>().playAnimation(AnimationsDropdown.options[i].text);
-
+        FindObjectOfType<change_active_character>().playAnimation(AnimationsDropdown.options[AnimationsDropdown.value].text);
     }
 
     private void SetAnimDropdown(int AvatarID)

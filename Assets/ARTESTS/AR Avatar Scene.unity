@@ -1544,6 +1544,11 @@ PrefabInstance:
       propertyPath: m_RotationOffset.z
       value: -9.229438
       objectReference: {fileID: 0}
+    - target: {fileID: 4312126559997901833, guid: 7f3543b7fe093c54391cb9ebd935b829,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 386cdc9fab3e6864ab604b39a42be464, type: 2}
     - target: {fileID: 4358645555653134107, guid: 7f3543b7fe093c54391cb9ebd935b829,
         type: 3}
       propertyPath: m_RotationOffset.x
@@ -2154,7 +2159,7 @@ GameObject:
   - component: {fileID: 1182422231}
   - component: {fileID: 1182422230}
   m_Layer: 0
-  m_Name: Emote Dropdown
+  m_Name: Animation Dropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2235,8 +2240,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1436291832}
-        m_MethodName: AnimationPicker
-        m_Mode: 3
+        m_MethodName: AnimationSelector
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4954,7 +4959,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 4f02b69de0e5b2e4db7f6ec84858bf44, type: 2}
+      objectReference: {fileID: 9100000, guid: 386cdc9fab3e6864ab604b39a42be464, type: 2}
     - target: {fileID: 2582229840479717621, guid: 94e7937841b790945b344bac6053d97d,
         type: 3}
       propertyPath: m_RotationOffset.x
@@ -5378,6 +5383,11 @@ PrefabInstance:
       propertyPath: m_RotationOffset.z
       value: -0.23982638
       objectReference: {fileID: 0}
+    - target: {fileID: 1197757321538985765, guid: 503aeecd5139711498ce8c3b7ba46472,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 386cdc9fab3e6864ab604b39a42be464, type: 2}
     - target: {fileID: 2659780991912158559, guid: 503aeecd5139711498ce8c3b7ba46472,
         type: 3}
       propertyPath: m_RotationOffset.x
