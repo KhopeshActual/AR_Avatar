@@ -27,11 +27,11 @@ public class change_active_character : MonoBehaviour
        
         return AvatarID;
     }
-    public void playAnimation(string trigger)
+    public void playAnimation(string toggle)
     {
         for (int i = 0; i < Avatars.Length; i++)
         {
-           Avatars[i].GetComponent<Animator>().SetTrigger(trigger);
+            Avatars[i].GetComponent<Animator>().SetTrigger(toggle);
   
         }
         
