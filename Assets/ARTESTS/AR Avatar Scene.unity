@@ -2474,6 +2474,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1305511770360875189, guid: 0f1c55f2e16dd5a4891ced41329897d8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5768219103081992514, guid: 0f1c55f2e16dd5a4891ced41329897d8,
         type: 3}
       propertyPath: m_IsActive
@@ -3337,7 +3342,7 @@ MonoBehaviour:
   - 
   - 
   ArtyomNDAnimations:
-  - Body Electircity Trigger
+  - Body Electricity
   - Gas Mask
   - Helmet
   - Electric Hands
