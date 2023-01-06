@@ -12,6 +12,7 @@ public class Getcharacters : MonoBehaviour
     public string[] ArtyomNDAnimations;
     public string[] ArtyomMorozovAnimations;
 
+    public string[] AvatarNames;
 
     public int[] AvatarList;
     public int AvatarID =0;
@@ -79,9 +80,9 @@ public class Getcharacters : MonoBehaviour
 
             }
         }
-        else if (AvatarID == 5)
+        else if (AvatarID == 6)
         {
-            AvatarID = 5;
+            AvatarID = 6;
             foreach (string Anim in ArtyomMorozovAnimations)
             {
                 AnimationsDropdown.options.Add(new TMP_Dropdown.OptionData(Anim));
@@ -92,13 +93,13 @@ public class Getcharacters : MonoBehaviour
     private void SetAvatarDropdown(int AvatarID)
     {
         AvatarsDropdown.options.Clear();
-
+        
 
         if (AvatarID == 0)
         {
             foreach (int ID  in AvatarList)
             {
-                AvatarsDropdown.options.Add(new TMP_Dropdown.OptionData("Avatar " + ID));
+                AvatarsDropdown.options.Add(new TMP_Dropdown.OptionData(AvatarNames[ID]));
 
             }
         }

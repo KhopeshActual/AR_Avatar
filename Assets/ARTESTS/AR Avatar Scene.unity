@@ -2015,6 +2015,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7090349508806236606, guid: 36b17bfdcfa3396479870243a99b2f39,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: eaea97a64e72a0642800548d264ad617, type: 2}
     m_RemovedComponents:
     - {fileID: 4651244480317284778, guid: 36b17bfdcfa3396479870243a99b2f39, type: 3}
     - {fileID: 1443593587180094896, guid: 36b17bfdcfa3396479870243a99b2f39, type: 3}
@@ -3319,17 +3324,22 @@ MonoBehaviour:
   - Spotlight Toggle
   - Reset anims
   ArtyomMorozovAnimations:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Helmet Belt
+  - Helmet Head
+  - Knife
+  - Hand Electricity
+  - Eyes Gold
+  - Eyes Green
+  - Sit
+  - Inspect
+  AvatarNames:
+  - Spartan
+  - Guardian
+  - Artyom Combat
+  - Artyom Suit
+  - Artyom Alt
+  - Guard ND
+  - Morozov
   AvatarList: 00000000010000000200000003000000040000000500000006000000
   AvatarID: 0
   AnimationsDropdown: {fileID: 1182422230}
