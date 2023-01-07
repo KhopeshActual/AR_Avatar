@@ -101,7 +101,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/UX/SampleUXScene.unity
     guid: 3b42d67a72bbc4004bf713db0e312326
-  - enabled: 1
+  - enabled: 0
     path: Assets/ARTESTS/AR Avatar Scene.unity
     guid: f84cc8d47d183524ca5125de65935919
   - enabled: 1

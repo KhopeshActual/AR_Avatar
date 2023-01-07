@@ -1,0 +1,3 @@
+f0340be5710e49ffbc7045f1315b9202|Assets/Scenes/ImageTracking/Images/H5G_REQ_AnubisHelmet.png|0.208564
+c8befcf19c45474c932ed6ce7518570d|Assets/Scenes/ImageTracking/Images/logo.png|0.3
+f60eb5d92a6340a3a971f6d2e233574e|Assets/Scenes/ImageTracking/Images/logo INV.png|0.3
