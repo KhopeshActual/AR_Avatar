@@ -321,6 +321,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _OrificeData:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OutlineMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -673,6 +677,8 @@ Material:
     - _BlendOpAlpha: 0
     - _BlendOpAlphaAnimated: 0
     - _BlendOpAnimated: 0
+    - _BlendshapeBadScaleFix: 1
+    - _BlendshapePower: 1
     - _BlueColorAnimated: 0
     - _BlueTextureAnimated: 0
     - _BuldgeFadeLength: 0.02
@@ -680,6 +686,8 @@ Material:
     - _BuldgeHeight: 0.02
     - _BuldgeHeightAnimated: 0
     - _BulgeMaskAnimated: 0
+    - _BulgeOffset: 0
+    - _BulgePower: 0
     - _BumpMapAnimated: 0
     - _BumpMapPanAnimated: 0
     - _BumpMapUV: 0
@@ -733,6 +741,7 @@ Material:
     - _CubeMapAnimated: 0
     - _Cull: 0
     - _CullAnimated: 0
+    - _Curvature: 0
     - _Cutoff: 0
     - _CutoffAnimated: 0
     - _DebugCameraData: 0
@@ -1111,6 +1120,8 @@ Material:
     - _EnableVideoAnimated: 0
     - _EnableVoronoi: 0
     - _EnableVoronoiAnimated: 0
+    - _EntranceStiffness: 0.01
+    - _EntryOpenDuration: 0.1
     - _FadeLength: 20
     - _FadeLengthAnimated: 0
     - _FlipbookAdd: 0
@@ -1281,8 +1292,12 @@ Material:
     - _InvertSmoothnessAnimated: 0
     - _IridescenceAddBlend: 0
     - _IridescenceAddBlendAnimated: 0
+    - _IridescenceAudioLinkEmissionBand: 0
     - _IridescenceEmissionStrength: 0
     - _IridescenceEmissionStrengthAnimated: 0
+    - _IridescenceHueShift: 0
+    - _IridescenceHueShiftEnabled: 0
+    - _IridescenceHueShiftSpeed: 0
     - _IridescenceIntensity: 1
     - _IridescenceIntensityAnimated: 0
     - _IridescenceMaskAnimated: 0
@@ -1299,11 +1314,14 @@ Material:
     - _IridescenceNormalToggleAnimated: 0
     - _IridescenceNormalUV: 0
     - _IridescenceNormalUVAnimated: 0
+    - _IridescenceOffset: 0
+    - _IridescencePanSpeed: 0
     - _IridescenceRampAnimated: 0
     - _IridescenceReplaceBlend: 0
     - _IridescenceReplaceBlendAnimated: 0
     - _IridescenceTime: 0
     - _IridescenceTimeAnimated: 0
+    - _Length: 0
     - _LightingAOTexAnimated: 0
     - _LightingAOTexPanAnimated: 0
     - _LightingAOTexUV: 0
@@ -1514,6 +1532,8 @@ Material:
     - _OffsetFactorAnimated: 0
     - _OffsetUnits: 0
     - _OffsetUnitsAnimated: 0
+    - _OrifaceEnabled: 0
+    - _OrificeChannel: 0
     - _OutlineCull: 1
     - _OutlineCullAnimated: 0
     - _OutlineDropShadowOffsetAnimated: 0
@@ -1629,6 +1649,7 @@ Material:
     - _PathingColorMapUV: 0
     - _PathingMapUV: 0
     - _PatreonHelpBox: 0
+    - _PenetratorEnabled: 0
     - _RGBAlpha_UV: 0
     - _RGBBlendMultiplicative: 0
     - _RGBBlendMultiplicativeAnimated: 0
@@ -1651,6 +1672,9 @@ Material:
     - _RGBRed_UVAnimated: 0
     - _RGBUseVertexColors: 0
     - _RGBUseVertexColorsAnimated: 0
+    - _RalivAdvancedHelp: 0
+    - _RalivHelp: 0
+    - _ReCurvature: 0
     - _RedColorAnimated: 0
     - _RedTexureAnimated: 0
     - _RefractionChromaticAberattion: 0
@@ -1748,6 +1772,12 @@ Material:
     - _ShadowOffsetAnimated: 0
     - _ShadowStrength: 1
     - _ShadowStrengthAnimated: 0
+    - _Shape1Depth: 0.1
+    - _Shape1Duration: 0.1
+    - _Shape2Depth: 0.2
+    - _Shape2Duration: 0.1
+    - _Shape3Depth: 0.3
+    - _Shape3Duration: 0.1
     - _Smoothness: 0.264
     - _SmoothnessAnimated: 0
     - _SmoothnessFrom: 1
@@ -1868,6 +1898,7 @@ Material:
     - _SpecularType1: 1
     - _SpecularType1Animated: 0
     - _SpecularTypeAnimated: 0
+    - _SqueezeDist: 0
     - _SrcBlend: 1
     - _SrcBlendAnimated: 0
     - _SssBumpBlur: 0.7
@@ -1973,6 +2004,7 @@ Material:
     - _VideoContrast: 0
     - _VideoContrastAnimated: 0
     - _VideoDebugTextureAnimated: 0
+    - _VideoEmissionEnabled: 1
     - _VideoEnableDebug: 0
     - _VideoEnableDebugAnimated: 0
     - _VideoEnableVideoPlayer: 0
@@ -2027,16 +2059,20 @@ Material:
     - _VoronoiSpeedAnimated: 0
     - _VoronoiType: 1
     - _VoronoiTypeAnimated: 0
+    - _Wriggle: 0
+    - _WriggleSpeed: 0.28
     - _ZTest: 4
     - _ZTestAnimated: 0
     - _ZWrite: 1
     - _ZWriteAnimated: 0
+    - __dirty: 1
     - _commentIfZero_EnableGrabpass: 0
     - _commentIfZero_EnableOutlinePass: 0
     - _commentIfZero_LightingAdditiveEnable: 1
     - _commentIfZero_LightingAdditiveEnableAnimated: 0
     - _glitterFrequencyLinearEmissive: 20
     - _glitterFrequencyLinearEmissiveAnimated: 0
+    - _squeeze: 0
     - footer_discord: 0
     - footer_github: 0
     - footer_patreon: 0
@@ -2074,6 +2110,7 @@ Material:
     - m_end_GrabPass: 0
     - m_end_Hologram: 0
     - m_end_Iridescence: 0
+    - m_end_IridescenceAudioLink: 0
     - m_end_Lighting: 0
     - m_end_MainHueShift: 0
     - m_end_MainVertexColors: 0
@@ -2143,6 +2180,10 @@ Material:
     - m_end_parallaxInternal: 0
     - m_end_pathing: 0
     - m_end_pointToPoint: 0
+    - m_end_raliv: 0
+    - m_end_ralivAdvanced: 0
+    - m_end_ralivOriface: 0
+    - m_end_ralivPenetrator: 0
     - m_end_reflectionRim: 0
     - m_end_rimHueShift: 0
     - m_end_rimLightOptions: 0
@@ -2186,6 +2227,7 @@ Material:
     - m_start_GrabPass: 0
     - m_start_Hologram: 0
     - m_start_Iridescence: 0
+    - m_start_IridescenceAudioLink: 0
     - m_start_Lighting: 1
     - m_start_MainHueShift: 0
     - m_start_MainVertexColors: 0
@@ -2255,6 +2297,10 @@ Material:
     - m_start_parallaxInternal: 0
     - m_start_pathing: 0
     - m_start_pointToPoint: 0
+    - m_start_raliv: 0
+    - m_start_ralivAdvanced: 0
+    - m_start_ralivOriface: 0
+    - m_start_ralivPenetrator: 0
     - m_start_reflectionRim: 0
     - m_start_rimHueShift: 0
     - m_start_rimLightOptions: 0
@@ -2267,6 +2313,7 @@ Material:
     - m_start_subsurface: 0
     - m_start_vertexManipulation: 0
     - m_start_voronoiRandom: 0
+    - m_thirdparty: 0
     - shader_is_using_thry_editor: 69
     - shader_master_label: 0
     - shader_presets: 0
@@ -2397,6 +2444,7 @@ Material:
     - _GrabPassBlendMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _GreenColor: {r: 1, g: 1, b: 1, a: 1}
     - _HoloDirection: {r: 0, g: 1, b: 0, a: 1}
+    - _IridescenceAudioLinkEmission: {r: 0, g: 0, b: 0, a: 0}
     - _LightingAOTexPan: {r: 0, g: 0, b: 0, a: 0}
     - _LightingDetailShadowsPan: {r: 0, g: 0, b: 0, a: 0}
     - _LightingShadowColor: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
