@@ -105,6 +105,9 @@ EditorBuildSettings:
     path: Assets/ARTESTS/AR Avatar Scene.unity
     guid: f84cc8d47d183524ca5125de65935919
   - enabled: 1
+    path: Assets/ARTESTS/AR Shirt scene_V2b.unity
+    guid: 9ee3892674db9f448a9054a9aae08849
+  - enabled: 0
     path: Assets/ARTESTS/AR Shirt scene_V2a.unity
     guid: 307281f0cd740cd4fb3ba03ed0feb85f
   - enabled: 0
