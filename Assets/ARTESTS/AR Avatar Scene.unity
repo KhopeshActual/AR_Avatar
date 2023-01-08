@@ -1608,6 +1608,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 60d58bcf994ffbf4db32a88ddf5e0969, type: 2}
+    - target: {fileID: 4685083973991364220, guid: 0f1c55f2e16dd5a4891ced41329897d8,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6101880030991838333, guid: 0f1c55f2e16dd5a4891ced41329897d8,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2370,7 +2375,8 @@ MonoBehaviour:
   - Artyom Alt
   - Guard ND
   - Morozov
-  AvatarList: 00000000010000000200000003000000040000000500000006000000
+  - VR Rat
+  AvatarList: 0000000001000000020000000300000004000000050000000600000007000000
   AvatarID: 0
   AnimationsDropdown: {fileID: 1182422230}
   AvatarsDropdown: {fileID: 1908227701}
