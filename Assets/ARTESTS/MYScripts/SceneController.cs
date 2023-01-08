@@ -12,7 +12,7 @@ public class SceneController : MonoBehaviour
 
     public void ShirtScene()
     {
-        SceneManager.LoadScene("AR Shirt Scene", LoadSceneMode.Single); // loads shirt scene
+        SceneManager.LoadScene("AR Shirt Scene_V2a", LoadSceneMode.Single); // loads shirt scene
     }
 
     public void AvatarScene()
