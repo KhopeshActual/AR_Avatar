@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class change_active_character : MonoBehaviour
 {
- 
+
     public GameObject[] Avatars;
 
     public AudioSource HaloAudio;
     public AudioSource DestinyAudio;
-
-
+   // public AudioSource[] ArtyAudios;
+    public AudioSource MoroAudo;
+    public AudioSource WolfAudio;
+    public AudioSource RatAudio;
     public int AvatarChanger(int AvatarID)
     {
         for (int i = 0; i < Avatars.Length; i++)
@@ -39,17 +41,29 @@ public class change_active_character : MonoBehaviour
 
     private bool isaudio = true;
 
-    public void Toggleaudio()
+    public void ToggleCharacterAudio()
     {
         if (isaudio == true)
         {
             HaloAudio.volume = 0;
             DestinyAudio.volume = 0;
+
+            //ArtyAudios.volume = 0;
+
+            MoroAudo.volume = 0;
+            WolfAudio.volume = 0;
+            RatAudio.volume = 0;
         }
         else
         {
-            HaloAudio.volume = 0.5f;
-            DestinyAudio.volume = 0.5f;
+            HaloAudio.volume = 0.25f;
+            DestinyAudio.volume = 0.25f;
+
+           // ArtyAudios.volume = 0.25f;
+
+            MoroAudo.volume = 0.25f;
+            WolfAudio.volume = 0.25f;
+            RatAudio.volume = 0.25f;
         }
         isaudio = !isaudio;
     }

@@ -27,7 +27,7 @@ public class Getcharacters : MonoBehaviour
     }
     public void Audiotoggle()
     {
-        FindObjectOfType<change_active_character>().Toggleaudio();
+        FindObjectOfType<change_active_character>().ToggleCharacterAudio();
     }
     public void AvatarSelector()
     {
