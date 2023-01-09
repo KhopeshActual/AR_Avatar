@@ -61,11 +61,13 @@ public class ARTapToPlace : MonoBehaviour
             }
             else
             {
-                SpawnedWorld.transform.position = hitPose.position;
-                if( Isbig == false)
+                if (Isbig == false)
                 {
                     SpawnedWorld = Instantiate(SmallWorldToSpawn, hitPose.position, hitPose.rotation);
                 }
+
+                SpawnedWorld.transform.position = hitPose.position;
+             
             }
         }
     }
