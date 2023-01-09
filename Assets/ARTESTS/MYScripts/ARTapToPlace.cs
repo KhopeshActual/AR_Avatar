@@ -8,7 +8,8 @@ using UnityEngine.XR.ARSubsystems;
 public class ARTapToPlace : MonoBehaviour
 {
 
-    public GameObject WorldToSpawn;
+    public GameObject BigWorldToSpawn;
+    public GameObject SmallWorldToSpawn;
 
     private GameObject SpawnedWorld;
     private ARRaycastManager _arRaycastmanager;
@@ -16,13 +17,24 @@ public class ARTapToPlace : MonoBehaviour
 
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
+    bool Isbig;
 
     private void Awake()
       {
         _arRaycastmanager = GetComponent<ARRaycastManager>();
 
-     }
+    }
 
+    public void SetSizeBig()
+    {
+        Isbig = true;
+
+    }
+    public void SetSizeSmall()
+    {
+        Isbig = false;
+
+    }
     bool TryGetTouchPosition(out Vector2 touchPosition)
     {
         if (Input.touchCount > 0)
@@ -43,13 +55,17 @@ public class ARTapToPlace : MonoBehaviour
         {
             var hitPose = hits[0].pose;
 
-            if(SpawnedWorld == null) 
+            if(SpawnedWorld == null && Isbig == true ) 
             { 
-                SpawnedWorld = Instantiate(WorldToSpawn, hitPose.position,hitPose.rotation);
+                SpawnedWorld = Instantiate(BigWorldToSpawn, hitPose.position,hitPose.rotation);
             }
             else
             {
                 SpawnedWorld.transform.position = hitPose.position;
+                if( Isbig == false)
+                {
+                    SpawnedWorld = Instantiate(SmallWorldToSpawn, hitPose.position, hitPose.rotation);
+                }
             }
         }
     }
