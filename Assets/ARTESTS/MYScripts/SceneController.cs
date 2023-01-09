@@ -13,7 +13,12 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
     }
-
+    public void WorldScene()
+    {
+        LoaderUtility.Deinitialize();
+        LoaderUtility.Initialize();
+        SceneManager.LoadScene("AR World Scene", LoadSceneMode.Single); // loads shirt scene
+    }
     public void ShirtScene()
     {
         LoaderUtility.Deinitialize();
