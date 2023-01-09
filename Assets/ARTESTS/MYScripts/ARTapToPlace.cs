@@ -61,9 +61,10 @@ public class ARTapToPlace : MonoBehaviour
             }
             else
             {
-                if (Isbig == false)
+                if (Isbig == false && SpawnedWorld == null)
                 {
                     SpawnedWorld = Instantiate(SmallWorldToSpawn, hitPose.position, hitPose.rotation);
+                 
                 }
 
                 SpawnedWorld.transform.position = hitPose.position;
